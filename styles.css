@@ -1,8 +1,8 @@
 /* styles.css */
 @keyframes bgAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% { background-color: #2c003e; } /* Dark Purple */
+    50% { background-color: #000000; } /* Black */
+    100% { background-color: #2c003e; } /* Back to Purple */
 }
 
 body {
@@ -13,35 +13,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(-45deg, #2c003e, #5a189a, #3a0ca3, #240046);
-    background-size: 400% 400%;
-    animation: bgAnimation 10s ease infinite;
+    animation: bgAnimation 5s ease-in-out infinite;
     color: #ffffff;
 }
 
 .container {
     text-align: center;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.75);
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
-    max-width: 500px;
+    max-width: 600px;
 }
 
 img {
-    width: 100px;
+    width: 200px; /* Increased size */
     height: auto;
     margin-bottom: 20px;
     border-radius: 8px;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Made heading slightly larger */
     margin-bottom: 10px;
     color: #bb86fc;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Slightly larger for better readability */
     color: #c4c4c4;
 }
