@@ -1,45 +1,47 @@
+/* styles.css */
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 body {
-    background: linear-gradient(135deg, #4B0082, #800080);
-    color: white;
     font-family: Arial, sans-serif;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    background: linear-gradient(-45deg, #2c003e, #5a189a, #3a0ca3, #240046);
+    background-size: 400% 400%;
+    animation: bgAnimation 10s ease infinite;
+    color: #ffffff;
 }
 
 .container {
-    animation: fadeIn 2s ease-in-out;
-}
-
-h1 {
-    font-size: 2.5em;
-    animation: glow 1.5s infinite alternate;
-}
-
-p {
-    font-size: 1.2em;
-    opacity: 0.9;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
 }
 
 img {
-    width: 200px;
-    animation: bounce 2s infinite;
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #bb86fc;
 }
 
-@keyframes glow {
-    from { text-shadow: 0 0 10px #ffffff; }
-    to { text-shadow: 0 0 20px #ff00ff; }
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+p {
+    font-size: 1rem;
+    color: #c4c4c4;
 }
