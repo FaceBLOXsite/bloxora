@@ -1,17 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOXORA</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="icon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon - Roblox Style</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('back.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .bloxora {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            width: 300px;
+            height: auto;
+            opacity: 0.9;
+            transform: translate(-50%, -50%);
+            animation: float 3s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(-50%, -50%) translateY(0);
+            }
+            50% {
+                transform: translate(-50%, -50%) translateY(-20px);
+            }
+            100% {
+                transform: translate(-50%, -50%) translateY(0);
+            }
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #cc0000;
+        }
+    </style>
 </head>
 <body>
-    <div id="main-container" class="container">
-        <img src="ohnoes.png" alt="Site Down">
-        <h1>Oh no! Our site is being developed.</h1>
-        <p>We're working hard to bring you this site. Please check back later.</p>
+    <img src="bloxora.png" alt="Bloxora Logo" class="bloxora">
+    <div class="container">
+        <h1>Coming Soon</h1>
+        <p>We're working hard to bring you something awesome. Stay tuned!</p>
+        <button class="btn">Notify Me</button>
     </div>
 </body>
 </html>
