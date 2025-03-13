@@ -6,8 +6,10 @@
     <title>BLOXORA</title>
     <link rel="icon" href="icon.png" type="image/png">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
         body {
-            font-family: Source Sans Pro, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background: url('back.png') no-repeat center center fixed;
             background-size: cover;
             color: #ffffff;
@@ -20,51 +22,72 @@
             overflow: hidden;
         }
 
-        .bloxora {
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            width: 300px;
-            height: auto;
-            opacity: 0.9;
-            transform: translate(-50%, -50%);
-            pointer-events: none;
+        .container {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+            max-width: 500px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .container {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            z-index: 2;
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
         }
 
         h1 {
-            font-size: 3rem;
-            font-weight: bold;
+            font-size: 3.5rem;
+            font-weight: 600;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            background: linear-gradient(90deg, #9400D3, #800080);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            letter-spacing: 1px;
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             margin-bottom: 30px;
+            color: #ddd;
+            opacity: 0.9;
+            line-height: 1.6;
         }
 
         .btn {
-            background-color: #800080;
+            background: linear-gradient(90deg, #800080, #9400D3);
             color: #ffffff;
-            padding: 10px 20px;
+            padding: 14px 36px;
             border: none;
-            border-radius: 5px;
-            font-size: 1rem;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: 500;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            outline: none;
         }
 
         .btn:hover {
-            background-color: #800080;
-            color: #ffffff;
+            background: linear-gradient(90deg, #9400D3, #800080);
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .btn {
+                font-size: 1rem;
+                padding: 12px 28px;
+            }
         }
     </style>
 </head>
@@ -72,7 +95,7 @@
     <div class="container">
         <h1>Coming Soon!</h1>
         <p>We're working hard to bring you something awesome. Stay tuned!</p>
-        <button class="btn" onclick="window.location.href='https://discord.gg/u9DQugf7PJ';">Discord Server!</button>
+        <button class="btn" onclick="window.location.href='https://discord.gg/u9DQugf7PJ';">Join Our Discord!</button>
     </div>
 </body>
 </html>
