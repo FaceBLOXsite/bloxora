@@ -39,18 +39,15 @@
             background: rgba(0, 0, 0, 0.95);
         }
 
-        .logo {
-            font-size: 2rem;
-            font-weight: 700;
-            background: linear-gradient(90deg, #9400D3, #800080);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: 2px;
-            cursor: pointer;
+        .logo img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
             transition: opacity 0.3s ease;
+            cursor: pointer;
         }
 
-        .logo:hover {
+        .logo img:hover {
             opacity: 0.8;
         }
 
@@ -213,7 +210,11 @@
 
 <!-- Navbar -->
 <div class="navbar">
-    <div class="logo">BLOXORA</div>
+    <div class="logo">
+        <a href="#">
+            <img src="cool.png" alt="BLOXORA Logo">
+        </a>
+    </div>
     <div class="nav-links">
         <a href="#about">About</a>
         <a href="#features">Features</a>
