@@ -16,6 +16,7 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            scroll-behavior: smooth;
         }
 
         /* Navbar */
@@ -64,6 +65,7 @@
             font-size: 1rem;
             font-weight: 500;
             transition: color 0.3s ease;
+            cursor: pointer;
         }
 
         .nav-links a:hover {
@@ -176,6 +178,26 @@
             line-height: 1.6;
         }
 
+        /* Contact Section */
+        .contact {
+            padding: 80px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.85);
+        }
+
+        .contact h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .contact p {
+            font-size: 1.3rem;
+            color: #ccc;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
         /* Footer */
         .footer {
             padding: 20px;
@@ -183,7 +205,7 @@
             background: rgba(0, 0, 0, 0.8);
             color: #ddd;
             font-size: 1rem;
-            margin-top: 40px;
+            margin-top: 0;
         }
     </style>
 </head>
@@ -203,7 +225,6 @@
 <div class="hero">
     <h1>Welcome to BLOXORA</h1>
     <p>The ultimate Roblox revival experience — better than ever!</p>
-    <button class="btn" onclick="window.location.href='https://discord.gg/u9DQugf7PJ';">Join Our Discord!</button>
 </div>
 
 <!-- About Section -->
@@ -222,10 +243,13 @@
         <h3>Multiplayer Fun</h3>
         <p>Connect with friends and explore together.</p>
     </div>
-    <div class="feature-card">
-        <h3>Custom Avatars</h3>
-        <p>Create unique avatars to stand out in the crowd.</p>
-    </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="contact">
+    <h2>Join Our Community!</h2>
+    <p>Connect with fellow players and stay updated on the latest news.</p>
+    <button class="btn" onclick="window.location.href='https://discord.gg/u9DQugf7PJ';">Join Our Discord!</button>
 </div>
 
 <!-- Footer -->
