@@ -15,86 +15,71 @@
             color: #ffffff;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
-
-        /* Navbar */
-        .navbar {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            padding: 15px 30px;
-            background: #1a001a;
-            border-bottom: 4px solid #800080;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
+            height: 100vh;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
         }
 
-        .logo img {
-            height: 50px;
+        .message {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .message h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #800080, #9400D3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .message p {
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+
+        .down-image {
+            max-width: 80%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background: #800080;
+            color: #ffffff;
+            padding: 14px 40px;
+            border: 2px solid #9400D3;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
             cursor: pointer;
-            transition: opacity 0.3s ease;
-        }
-
-        .logo img:hover {
-            opacity: 0.8;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            color: #cccccc;
-            text-decoration: none;
-            font-size: 14px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
             text-transform: uppercase;
-            transition: color 0.2s ease;
-            font-weight: 500;
+            outline: none;
+            margin-top: 20px;
         }
 
-        .nav-links a:hover {
-            color: #9400D3;
+        .btn:hover {
+            background: #9400D3;
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
         }
     </style>
 </head>
 <body>
 
-<!-- Background Audio -->
-<audio id="bg-music" autoplay loop>
-    <source src="background.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-</audio>
-
-<!-- Navbar -->
-<div class="navbar">
-    <div class="logo">
-        <a href="#">
-            <img src="cool.png" alt="BLOXORA Logo">
-        </a>
-    </div>
-    <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
-    </div>
-</div>
-
-<!-- Hero Section -->
-<div class="hero">
-    <h1>BLOXORA</h1>
-    <p>The ultimate Roblox revival experience — better than ever!</p>
+<div class="message">
+    <h1>Oh no! BLOXORA is down for maintenance.</h1>
+    <p>We're working hard to bring things back online. Stay updated on our Discord server!</p>
     <button class="btn" onclick="window.location.href='https://discord.gg/u9DQugf7PJ';">Join Our Discord</button>
 </div>
 
-<!-- Footer -->
-<div class="footer">
-    &copy; 2025 BLOXORA. All rights reserved.
-</div>
+<img src="ohnoes.png" alt="Site Down" class="down-image">
+
 </body>
 </html>
