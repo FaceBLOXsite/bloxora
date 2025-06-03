@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3e3e3;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0073e6;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.game-tile {
+  width: 150px;
+  margin: 10px;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #0073e6;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
